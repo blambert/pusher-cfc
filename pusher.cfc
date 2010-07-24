@@ -76,6 +76,9 @@
 	--->
 	 <cffunction name="hmacsha256Representation" access="private" output="no">
 	 	<cfargument name="data" required="yes">
+	 	<cfset var secret="">
+	 	<cfset var mac="">
+	 	<cfset var digest="">
 		
 		<cfscript>
 			secret = createObject('java', 'javax.crypto.spec.SecretKeySpec' );
