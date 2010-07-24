@@ -50,7 +50,7 @@
 		<cfset hash = bigInteger.toString(16)>
 		
 		<!--- zero pad it --->
-		<cfloop condition="hash.length() lt 32">
+		<cfloop condition="hash.length() lt 64">
 			<cfset hash = "0" + hash>
 		</cfloop>
 		
