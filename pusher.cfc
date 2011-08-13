@@ -51,7 +51,7 @@
 		
 		<!--- zero pad it --->
 		<cfloop condition="hash.length() lt 64">
-			<cfset hash = "0" + hash>
+			<cfset hash = "0" & hash>
 		</cfloop>
 		
 		<cfreturn hash>	
